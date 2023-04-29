@@ -105,3 +105,19 @@ a {
     color-scheme: dark;
   }
 }
+.navdiv{
+  background: rgba(248,249,250, 1)!important
+}
+.nav{
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+.nav-item{
+  border-bottom:1px solid #ddd;
+}
+.nav-item:last-child{
+  border-bottom:0px;
+}
+div h1{
+  margin-top:10px;
+}
