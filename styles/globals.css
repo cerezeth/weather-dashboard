@@ -87,12 +87,12 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {
@@ -104,4 +104,24 @@ a {
   html {
     color-scheme: dark;
   }
+}
+.navdiv{
+  background: rgba(248,249,250, 1)!important
+}
+.nav{
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+.nav-item{
+  border-bottom:1px solid #ddd;
+}
+.nav-item:last-child{
+  border-bottom:0px;
+}
+div h1{
+  margin-top:10px;
+}
+
+div #__next{
+  background:white;
 }
