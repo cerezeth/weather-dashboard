@@ -60,7 +60,12 @@ type ChartData = {
 type Props = {
     dashboardData: WeatherData;
 }
+<<<<<<< HEAD
 export default function Sembcorp({ dashboardData }: Props) {    
+=======
+export default function Sembcorp({ dashboardData }: Props) {
+    console.log(dashboardData)
+>>>>>>> d1c6f2d3dd9c8859eac3ef24a3124940780cd598
     const [barChartData, setBarChartData] = useState<ChartData>({
         labels: Array.from({ length: 240 }, (_, i) => `${i}`),
         datasets: [
@@ -129,7 +134,12 @@ export default function Sembcorp({ dashboardData }: Props) {
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
     const url = 'https://api.open-meteo.com/v1/forecast?latitude=1.29&longitude=103.85&hourly=relativehumidity_2m,direct_radiation&daily=temperature_2m_max,temperature_2m_min&timezone=Asia%2FSingapore&start_date=2023-01-01&end_date=2023-01-10';
     const res = await fetch(url);
+<<<<<<< HEAD
     const dashboardData: WeatherData = await res.json();    
+=======
+    const dashboardData: WeatherData = await res.json();
+    console.log(dashboardData)
+>>>>>>> d1c6f2d3dd9c8859eac3ef24a3124940780cd598
     return {
         props: {
             dashboardData,
